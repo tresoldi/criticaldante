@@ -1,0 +1,148 @@
+IQ-TREE 1.5.3 built Jan 15 2017
+
+Input file name: data/tresoldi_red.nex
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 110890
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh (2015)
+IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol. Biol. Evol., 32:268-274.
+http://dx.doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Bui Quang Minh, Minh Anh Thi Nguyen, and Arndt von Haeseler (2013) Ultrafast
+approximation for phylogenetic bootstrap. Mol. Biol. Evol., 30:1188-1195.
+http://dx.doi.org/10.1093/molbev/mst024
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 8 sequences with 94782 morphological sites
+Number of constant sites: 83511 (= 88.1085% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 83511 (= 88.1085% of all sites)
+Number of distinct site patterns: 1607
+
+MODEL SELECTION
+---------------
+
+Best-fit model according to BIC: ORDERED+FQ+I+G4
+
+List of models sorted by BIC scores: 
+
+Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+ORDERED+FQ+I+G4 -295605.8323 591241.6647 + 1.0000 591241.6697 + 1.0000 591383.5547 + 1.0000
+ORDERED+FQ+G4   -296375.6080 592779.2160 - 0.0000 592779.2205 - 0.0000 592911.6467 - 0.0000
+ORDERED+FQ+I    -296412.0340 592852.0680 - 0.0000 592852.0724 - 0.0000 592984.4987 - 0.0000
+ORDERED+FQ      -302191.5875 604409.1750 - 0.0000 604409.1788 - 0.0000 604532.1463 - 0.0000
+MK+FQ+I+G4      -320139.1658 640308.3316 - 0.0000 640308.3367 - 0.0000 640450.2216 - 0.0000
+MK+FQ+I         -320263.8305 640555.6609 - 0.0000 640555.6654 - 0.0000 640688.0916 - 0.0000
+MK+FQ+G4        -320613.4649 641254.9299 - 0.0000 641254.9343 - 0.0000 641387.3605 - 0.0000
+MK+FQ           -326440.9564 652907.9128 - 0.0000 652907.9166 - 0.0000 653030.8842 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: ORDERED+FQ+I+G4
+
+State frequencies: (equal frequencies)
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.6602
+Gamma shape alpha: 0.8434
+
+ Category  Relative_rate  Proportion
+  0         0              0.6602
+  1         0.3082         0.0850
+  2         1.2477         0.0850
+  3         2.8493         0.0850
+  4         7.3653         0.0850
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -295374.1514 (s.e. 754.0153)
+Unconstrained log-likelihood (without tree): -99780.7570
+Number of free parameters (#branches + #model parameters): 15
+Akaike information criterion (AIC) score: 590778.3028
+Corrected Akaike information criterion (AICc) score: 590778.3079
+Bayesian information criterion (BIC) score: 590920.1928
+
+Total tree length (sum of branch lengths): 0.3392
+Sum of internal branch lengths: 0.0469 (13.8269% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Ash' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++----------------------------------------------Ash
+|
++-----------------------------------------------Ham
+|
+|                  +--------------------------------------LauSC
+|              +---| (100/100)
+|              |   |            +---Mart_c2
+|              |   +------------| (100/100)
+|              |                +------------Triv
+|           +--| (100/100)
+|           |  +--------------------------Mart
++-----------| (100/100)
+            |    +----------------------------------------Rb
+            +----| (100/100)
+                 +-----------------------Urb
+
+Tree in newick format:
+
+(Ash:0.0558257669,Ham:0.0573780435,(((LauSC:0.0469249132,(Mart_c2:0.0057223342,Triv:0.0155641880)100/100:0.016188)100/100:0.004899,Mart:0.0328735552)100/100:0.004091,(Rb:0.0492303462,Urb:0.0287417505)100/100:0.006739)100/100:0.014978);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -295711.768300
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with bootstrap support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------------------------------------------Ash
+|
++----------------------------------------------Ham
+|
+|                        +--------------------------------LauSC
+|                 +------| (100)
+|                 |      |            +-------Mart_c2
+|                 |      +------------| (100)
+|                 |                   +------------Triv
+|          +------| (100)
+|          |      +----------------------Mart
++----------| (100)
+           |     +----------------------------------Rb
+           +-----| (100)
+                 +---------------------Urb
+
+
+Consensus tree in newick format: 
+
+(Ash:0.0607261009,Ham:0.0645408745,(((LauSC:0.0452406511,(Mart_c2:0.0119671012,Triv:0.0186266738)100:0.0181080000)100:0.0103620000,Mart:0.0314127045)100:0.0101870000,(Rb:0.0488919584,Urb:0.0304592422)100:0.0093700000)100:0.0158500000);
+
+TIME STAMP
+----------
+
+Date and time: Wed Mar 15 15:41:22 2017
+Total CPU time used: 126.68 seconds (0h:2m:6s)
+Total wall-clock time used: 127.273401 seconds (0h:2m:7s)
+
