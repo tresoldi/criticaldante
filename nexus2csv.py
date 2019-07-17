@@ -29,10 +29,13 @@ def main():
     matrix_start = ["MATRIX" in line for line in lines]
     vectors = lines[matrix_start.index(True)+1:-2]
 
-    with open("data/dante_chars.csv", "w") as handler:
-        handler.write("Taxon\tCharacter\tValue\n")
+    with open("beast/dante_chars.csv", "w") as handler:
+        handler.write("Language_ID\tFeature_ID\tValue\n")
 
         for vector in vectors:
+            if not " " in vector:
+                continue
+
             taxon, chars = vector.split(" ", 1)
             chars = chars[1:]
             for char_label, char_value in zip(labels, chars):
