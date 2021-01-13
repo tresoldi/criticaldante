@@ -1,0 +1,26 @@
+<itsabeastystatewerein version='2.0' sample='25000000'>
+<statenode id='Tree.t:beastlingTree'>((0:0.20656530483796215,(((2:0.12988774055998192,(3:0.03941966500869088,5:0.03941966500869088)11:0.09046807555129105)9:0.01710868356310777,6:0.1469964241230897)7:0.0075714529990975055,4:0.1545678771221872)10:0.05199742771577495)8:0.015377912311843989,1:0.22194321714980614)12:0.0</statenode>
+<statenode id='birthRate.t:beastlingTree'>birthRate.t:beastlingTree[1 1] (-Infinity,Infinity): 19.315049534917172 </statenode>
+<statenode id='deathRate.t:beastlingTree'>deathRate.t:beastlingTree[1 1] (-Infinity,Infinity): 0.04673722139795338 </statenode>
+<statenode id='sampling.t:beastlingTree'>sampling.t:beastlingTree[1 1] (-Infinity,Infinity): 0.09375232078151585 </statenode>
+<statenode id='clockRate.c:default'>clockRate.c:default[1 1] (0.0,1000.0): 1.0 </statenode>
+<statenode id='covarion_alpha.s:dante'>covarion_alpha.s:dante[1 1] (1.0E-4,1.0): 0.9765382922583236 </statenode>
+<statenode id='covarion_s.s:dante'>covarion_s.s:dante[1 1] (1.0E-4,Infinity): 1.618139462664129E-4 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"SubtreeSlide.t:beastlingTree","p":0.05112777858708189,"accept":136043,"reject":4333144,"acceptFC":136026,"rejectFC":4328687,"rejectIv":780056,"rejectOp":780056},
+{"id":"narrow.t:beastlingTree","p":"NaN","accept":48414,"reject":4417398,"acceptFC":48366,"rejectFC":4412943,"rejectIv":0,"rejectOp":0},
+{"id":"wide.t:beastlingTree","p":"NaN","accept":1280,"reject":892240,"acceptFC":1280,"rejectFC":891369,"rejectIv":487660,"rejectOp":487660},
+{"id":"WilsonBalding.t:beastlingTree","p":"NaN","accept":113,"reject":893993,"acceptFC":110,"rejectFC":893124,"rejectIv":404933,"rejectOp":404933},
+{"id":"UniformOperator.t:beastlingTree","p":"NaN","accept":611184,"reject":8311952,"acceptFC":610588,"rejectFC":8303428,"rejectIv":0,"rejectOp":0},
+{"id":"treeScaler.t:beastlingTree","p":0.9130297939348031,"accept":108238,"reject":783434,"acceptFC":108219,"rejectFC":782548,"rejectIv":0,"rejectOp":0},
+{"id":"treeRootScaler.t:beastlingTree","p":0.8620776073485832,"accept":82314,"reject":809587,"acceptFC":82296,"rejectFC":808724,"rejectIv":244082,"rejectOp":244082},
+{"id":"UpDown","p":0.9126140780744104,"accept":108163,"reject":784965,"acceptFC":108155,"rejectFC":783985,"rejectIv":0,"rejectOp":0},
+{"id":"YuleBirthRateScaler.t:beastlingTree","p":0.27477489220217294,"accept":211376,"reject":681035,"acceptFC":211003,"rejectFC":680504,"rejectIv":0,"rejectOp":0},
+{"id":"SamplingScaler.t:beastlingTree","p":0.18994722855706989,"accept":87978,"reject":210090,"acceptFC":87682,"rejectFC":210063,"rejectIv":51291,"rejectOp":0},
+{"id":"DeathRateScaler.t:beastlingTree","p":0.0917023163241473,"accept":153457,"reject":738616,"acceptFC":152854,"rejectFC":738299,"rejectIv":0,"rejectOp":0},
+{"id":"covarion_alpha_scaler.s:dante","p":0.33842027782798795,"accept":54865,"reject":242465,"acceptFC":54774,"rejectFC":242250,"rejectIv":186412,"rejectOp":186412},
+{"id":"dante:covarion_s_scaler.s","p":0.18473332299294512,"accept":84891,"reject":212766,"acceptFC":84696,"rejectFC":212661,"rejectIv":886,"rejectOp":886}
+]}
+-->
